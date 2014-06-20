@@ -2,7 +2,7 @@
 
 namespace CW\View;
 
-class HtmlModule extends \CW\View\Base
+class Module extends \CW\View\Base
 {
 	protected function init() {
 		// print_r($this->args);

@@ -2,7 +2,7 @@
 
 namespace CW\View;
 
-class HtmlPage extends \CW\View\Base
+class Page extends \CW\View\Base
 {
 	protected function init() {
 		
@@ -15,14 +15,6 @@ class HtmlPage extends \CW\View\Base
 			$this->registerView('Debug');
 		}
 		
-		// $this->registerJsFile(
-			// 'views/page/home.js'
-		// );
-// 		
-		// $this->registerCssFile(array(
-			// 'page/home.css',
-			// 'modal.css'
-		// ));
 	}
 	
 	protected function getTemplateData() {
