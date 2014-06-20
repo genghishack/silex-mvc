@@ -1,0 +1,90 @@
+<!DOCTYPE HTML> 
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html lang="en" class="ie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="ie lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="ie lt-ie9"> <![endif]-->
+<!--[if IE 9]>    <html lang="en" class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!--<![endif]-->
+
+<head>
+<title>{{ title }}</title>
+
+	{{{ metaTags }}}
+	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,800,700,300' rel='stylesheet' type='text/css' />
+
+	{{#use_min}}
+	<link href="/dist/release/lib.css{{versionQueryString}}" rel="stylesheet" />
+	<link href="/dist/release/page/{{page}}.css{{versionQueryString}}" rel="stylesheet" />
+	{{/use_min}}
+	
+	{{^use_min}}
+	<link href="/css/reset.css{{versionQueryString}}" rel="stylesheet" />
+	<link href="/css/global.css{{versionQueryString}}" rel="stylesheet" />
+    <link href="/css/logo_sprites.css{{versionQueryString}}" rel="stylesheet" />
+	
+	{{#cssFiles}}
+	<link href="/css/{{ file }}{{versionQueryString}}" rel="stylesheet" module="{{ module }}"/>
+	{{/cssFiles}}
+	
+	{{/use_min}}
+
+    <script type='text/javascript'>
+        (function() {
+            var useSSL = 'https:' == document.location.protocol;
+            var src = (useSSL ? 'https:' : 'http:') +
+                    '//www.googletagservices.com/tag/js/gpt.js';
+            document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+        })();
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="/lib/js/html5shiv.js"></script>
+    <![endif]-->
+
+	{{^debug}}
+    <script type='text/javascript'>
+        googletag.defineSlot('/7983/football_970x66', [970, 66], 'div-gpt-ad-1351881431033-0').addService(googletag.pubads());
+        googletag.pubads().enableSyncRendering();
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+    </script>
+    {{/debug}}
+    
+</head>
+
+<body>
+	
+	<div class="lights"></div>
+
+	<section id="header">
+		{{{ header }}}
+	</section>
+
+	<section id="content" class="contain">
+		{{{ content }}}
+	</section>
+
+	<section id="footer">
+		{{{ footer }}}
+	</section>
+
+    <div id="fb-root"></div>
+
+    <script type="text/javascript" src="/js/lib/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="/js/lib/underscore-1.6.0.js"></script>
+    <script type="text/javascript" src="/js/lib/backbone-1.1.2.js"></script>
+    <script type="text/javascript" src="/js/lib/bootstrap-3.1.1.js"></script>
+	
+	{{#jsFiles}}
+	<script type="text/javascript" src="/js/{{ file }}{{versionQueryString}}" module="{{ module }}"></script>
+	{{/jsFiles}}
+
+</body>
+
+{{#debug}}
+{{{ debugger }}}
+{{/debug}}
+</html>

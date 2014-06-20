@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html lang="en" class="ie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="ie lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="ie lt-ie9"> <![endif]-->
+<!--[if IE 9]>    <html lang="en" class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!--<![endif]-->
+
+<head>
+<title>Module: {{ module }}</title>
+
+	<link rel="stylesheet" href="/css/reset.css{{versionQueryString}}" />
+	<link rel="stylesheet" href="/css/global.css{{versionQueryString}}" />
+
+	{{#cssFiles}}
+	<link rel="stylesheet" href="/css/{{ file }}{{versionQueryString}}" data-module="{{ module }}"/>
+	{{/cssFiles}}
+
+</head>
+
+<body>
+
+	<section id="content">
+		{{{ content }}}
+	</section>
+
+	<script type="text/javascript" src="/dist/debug/lib.js{{versionQueryString}}"></script>
+
+	<script type="text/javascript" src="/js/setup.js{{versionQueryString}}"></script>
+	<script type="text/javascript" src="/js/utils.js{{versionQueryString}}"></script>
+	<script type="text/javascript" src="/js/settings.js{{versionQueryString}}"></script>
+	<script type="text/javascript" src="/js/templates.js{{versionQueryString}}"></script>
+	<script type="text/javascript" src="/js/validation.js{{versionQueryString}}"></script>
+	<script type="text/javascript" src="/js/cookies.js{{versionQueryString}}"></script>
+	
+	{{#jsFiles}}
+	<script type="text/javascript" src="/js/{{ file }}{{ versionQueryString }}" data-module="{{ module }}"></script>
+	{{/jsFiles}}
+
+</body>
+
+{{#debug}}
+{{{ debugger }}}
+{{/debug}}
+
+</html>

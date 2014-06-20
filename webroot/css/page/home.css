@@ -1,0 +1,45 @@
+#humanList {
+	position: relative;
+	margin: 0 auto;
+	width: 800px;
+	border: 1px dotted black;
+}
+#humanList .human {
+	clear: both;
+	margin: 5px;
+	border: 1px dotted gray;
+}
+#humanList .contact {
+	float: left;
+	width: 196px;
+}
+#humanList .contact .name {
+	border: 1px dotted red;
+}
+#humanList .contact .phones {
+	border: 1px dotted blue;
+}
+#humanList .contact .emails {
+	border: 1px dotted orange;
+}
+#humanList .contact .urls {
+	border: 1px dotted yellow;
+}
+#humanList .companys {
+	float: left;
+	width: 195px;
+	border: 1px dotted green;
+}
+#humanList .jobLeads {
+	float: left;
+	width: 195px;
+	border: 1px dotted blue;
+}
+#humanList .jobLeads label {
+	display: block;
+}
+#humanList .notes {
+	float: left;
+	width: 195px;
+	border: 1px dotted yellow;
+}

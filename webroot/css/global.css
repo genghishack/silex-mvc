@@ -1,0 +1,10 @@
+.hasLayout, .clearfix, .cf, .contain {
+	/* the following has compatibility back to IE6 */
+}
+.contain:after, .clearfix:after, .cf:after, .hasLayout:after {
+    clear:both;
+    content:".";
+    display:block;
+    height:0;
+    visibility:hidden;
+}

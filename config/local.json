@@ -1,0 +1,12 @@
+{
+	"debug"   : true,
+	"use_min" : false,
+
+	"db.user" : "root",
+	"db.pass" : "root",
+	"db.host" : "localhost",
+	"db.name" : "jobSearch",
+	
+	"ga-id" : ""
+	
+}

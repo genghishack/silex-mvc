@@ -1,0 +1,22 @@
+{
+	"minimum-stability": "dev",
+
+	"require": {
+		"php": ">=5.3.2",
+		"igorw/config-service-provider": "1.0.*",
+		"taluu/doctrine-orm-provider": "1.0.*@dev",
+		"silex/silex": "1.0.*",
+		"twig/twig": "1.*",
+		"mustache/mustache": "2.1.*",
+		"mustache/silex-provider": "~1.0",
+		"slim/slim": "2.*",
+		"twbs/bootstrap": "3.1.*",
+		"raveren/kint": "1.0.*@dev"
+	},
+	
+	"autoload": {
+		"psr-0": {
+			"CW": "src/"
+		}
+	}
+}

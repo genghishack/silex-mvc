@@ -1,0 +1,12 @@
+{
+	"debug": false,
+	"use_min": false,
+	
+	"page.title": "Job Search",
+	"page.meta": {
+		"description": "This is my job search site in development.",
+		"author": "Christopher M. Wade",
+		"keywords": ""
+	},
+	"timezone" : "America/Denver"
+}
