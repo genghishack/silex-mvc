@@ -1,4 +1,4 @@
-appengine-helloworld-python
+silex-mvc
 ===========================
 
-This is a simple Hello World application for Google App Engine (Python)
+This is a hand-rolled MVC framework using Silex, Doctrine, Bootstrap, Mustache templates and (maybe) Angular.
