@@ -10,6 +10,8 @@ class Home extends \CW\View\Base
 			'pageName' => 'Home'
 		);
 		
+		$this->registerModule('HumanList');
+		
 		$this->registerJsFile(
 			'views/page/home.js'
 		);
@@ -29,11 +31,9 @@ class Home extends \CW\View\Base
 	}
 	
 	protected function getTemplateData() {
-		$result = array(
-			'humans' => $this->app['api']['misc']->getHumans()
+		return array(
+			'HumanList' => $this->HumanList
 		);
-		$this->app['debugger']->registerDebugVar($result, 'getTemplateData');
-		return $result;
 	}
 
 }

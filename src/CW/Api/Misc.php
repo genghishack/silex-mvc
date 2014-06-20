@@ -359,5 +359,5 @@ class Misc extends Base
 
 		return $this->response($response);
 	}
-}
 
+}

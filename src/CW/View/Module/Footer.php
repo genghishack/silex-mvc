@@ -10,9 +10,7 @@ class Footer extends \CW\View\Base {
 	}
 	
 	protected function getTemplateData() {
-		$data = array(
-		);
-		return $data;
+		return array();
 	}
 	
 }
