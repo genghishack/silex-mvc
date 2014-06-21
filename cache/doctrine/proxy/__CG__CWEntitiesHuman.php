@@ -42,6 +42,12 @@ class Human extends \CW\Entities\Human implements \Doctrine\ORM\Proxy\Proxy
     }
 
     
+    public function toArray()
+    {
+        $this->__load();
+        return parent::toArray();
+    }
+
     public function getId()
     {
         if ($this->__isInitialized__ === false) {
@@ -85,6 +91,42 @@ class Human extends \CW\Entities\Human implements \Doctrine\ORM\Proxy\Proxy
     {
         $this->__load();
         return parent::getNameLast();
+    }
+
+    public function addCompany(\CW\Entities\HumanXCompany $companys)
+    {
+        $this->__load();
+        return parent::addCompany($companys);
+    }
+
+    public function removeCompany(\CW\Entities\HumanXCompany $companys)
+    {
+        $this->__load();
+        return parent::removeCompany($companys);
+    }
+
+    public function getCompanys()
+    {
+        $this->__load();
+        return parent::getCompanys();
+    }
+
+    public function addJobLead(\CW\Entities\HumanXJobLead $jobLeads)
+    {
+        $this->__load();
+        return parent::addJobLead($jobLeads);
+    }
+
+    public function removeJobLead(\CW\Entities\HumanXJobLead $jobLeads)
+    {
+        $this->__load();
+        return parent::removeJobLead($jobLeads);
+    }
+
+    public function getJobLeads()
+    {
+        $this->__load();
+        return parent::getJobLeads();
     }
 
     public function addPhone(\CW\Entities\Phone $phones)
@@ -162,7 +204,7 @@ class Human extends \CW\Entities\Human implements \Doctrine\ORM\Proxy\Proxy
 
     public function __sleep()
     {
-        return array('__isInitialized__', 'id', 'name_first', 'name_middle', 'name_last', 'phones', 'emails', 'urls', 'notes');
+        return array('__isInitialized__', 'id', 'name_first', 'name_middle', 'name_last', 'companys', 'jobLeads', 'phones', 'emails', 'urls', 'notes');
     }
 
     public function __clone()

@@ -266,6 +266,17 @@ class Misc extends Base
 		$this->em->flush();
 	}
 	
+	public function getJobLeads() {
+		$query = $this->em->createQuery(
+			"SELECT j
+			   FROM CW\Entities\JobLead j"
+		);
+		
+		$result = $query->getArrayResult();
+		
+		return $this->response($result);
+	}
+	
 	public function getCompanies() {
 		$query = $this->em->createQuery(
 			"SELECT c

@@ -27,6 +27,7 @@ class Error extends \CW\View\Base
 	private function error404() {
 		return array(
 			'type' => $this->args['code'],
+			'error404' => true,
 			'message' => 'The page you requested could not be found.'
 		);
 	}
@@ -34,6 +35,7 @@ class Error extends \CW\View\Base
 	private function errorGeneric() {
 		return array(
 			'type' => $this->args['code'],
+			'error404' => false,
 			'message' => 'There was an error loading the page you requested.'
 		);
 	}

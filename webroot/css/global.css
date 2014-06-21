@@ -8,3 +8,9 @@
     height:0;
     visibility:hidden;
 }
+
+#Error {
+	position: relative;
+	width: 800px;
+	margin: 15px auto;
+}

@@ -1,0 +1,12 @@
+footer {
+	position: relative;
+	width: 790px;
+	margin: 0 auto;
+	background-color: #ccc;
+	padding: 5px;
+}
+
+footer .content {
+	font-style: italic;
+	font-size: 8px;
+}

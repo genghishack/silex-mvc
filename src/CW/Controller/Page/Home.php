@@ -23,6 +23,30 @@ class Home extends Base implements ControllerProviderInterface
 			}
 		});		
 
+		$controllers->get('/HumanList', function(Application $app) use ($self) {
+			if ('cli' != php_sapi_name()) {
+				return $self->renderPage('HumanList');
+			} else {
+				return '';
+			}
+		});		
+
+		$controllers->get('/CompanyList', function(Application $app) use ($self) {
+			if ('cli' != php_sapi_name()) {
+				return $self->renderPage('CompanyList');
+			} else {
+				return '';
+			}
+		});		
+
+		$controllers->get('/JobLeadList', function(Application $app) use ($self) {
+			if ('cli' != php_sapi_name()) {
+				return $self->renderPage('JobLeadList');
+			} else {
+				return '';
+			}
+		});		
+
 		$controllers->get('/populate', function(Application $app) use ($self) {
 			if ('cli' != php_sapi_name()) {
 				return $self->renderPage('Populate');
