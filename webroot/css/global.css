@@ -9,7 +9,7 @@
     visibility:hidden;
 }
 
-#Error {
+#Error, .content {
 	position: relative;
 	width: 800px;
 	margin: 15px auto;
