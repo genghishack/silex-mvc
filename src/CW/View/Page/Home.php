@@ -10,8 +10,6 @@ class Home extends \CW\View\Base
 			'pageName' => 'Home'
 		);
 		
-		$this->registerModule('HumanList');
-		
 		$this->registerJsFile(
 			'views/page/home.js'
 		);
@@ -21,18 +19,10 @@ class Home extends \CW\View\Base
 			'modal.css'
 		));
 		
-		// $this->app['api']['misc']->populate();
-		// $this->app['api']['misc']->depopulate();
-		
-		// $this->app['api']['misc']->getCompanies();
-		// $this->app['api']['misc']->getEmails();
-		// $this->app['api']['misc']->getFirstEmail();
-		
 	}
 	
 	protected function getTemplateData() {
 		return array(
-			'HumanList' => $this->HumanList
 		);
 	}
 

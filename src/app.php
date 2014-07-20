@@ -36,8 +36,6 @@ $app->mount('/api', new CW\Controller\Api\Misc());
 /**
  * PAGE ROUTES
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-$app->mount('/populate', new CW\Controller\Page\Home());
-$app->mount('/depopulate', new CW\Controller\Page\Home());
 $app->mount('/', new CW\Controller\Page\Home());
  
 // $app['debugger']->registerDebugVar($app, 'app');

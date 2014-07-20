@@ -2,7 +2,7 @@
 
 switch ($_SERVER['SERVER_NAME']) {
 	case '127.0.0.1':
-	case 'jobs':
+	case 'test':
 		return ENV_LOCAL;
 		
 	case 'dev.':

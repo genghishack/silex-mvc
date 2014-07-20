@@ -17,18 +17,6 @@ class Misc implements ControllerProviderInterface
 		$controllers->get('/', function(Application $app) use ($self) {
 		});
 		
-		$controllers->get('/companies', function(Application $app) use ($self) {
-			return $app['api']['misc']->getCompanies();
-		});
-		
-		$controllers->get('/emails', function(Application $app) use ($self) {
-			return $app['api']['misc']->getEmails();
-		});
-		
-		$controllers->get('/humans', function(Application $app) use ($self) {
-			return $app['api']['misc']->getHumans();
-		});
-		
 		return $controllers;
 	}
 }
