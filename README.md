@@ -1,4 +1,6 @@
 silex-mvc
 ===========================
 
-This is a hand-rolled MVC framework using Silex, Doctrine, Bootstrap, Mustache templates and (maybe) Angular.
+This is a Generic MVC framework written in PHP, using Symfony, Silex, Doctrine and Mustache templates.
+
+
