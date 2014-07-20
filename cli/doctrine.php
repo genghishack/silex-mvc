@@ -10,12 +10,12 @@ $classLoader = new \Doctrine\Common\ClassLoader('Doctrine\Common', realpath(__DI
 $classLoader->register();
 $classLoader = new \Doctrine\Common\ClassLoader('Symfony', realpath(__DIR__ . '/../vendor/symfony/console'));
 $classLoader->register();
-$classLoader = new \Doctrine\Common\ClassLoader('Entities', __DIR__ . '/../src/CI/Entities');
+$classLoader = new \Doctrine\Common\ClassLoader('Entities', __DIR__ . '/../src/CW/Entities');
 $classLoader->register();
 $classLoader = new \Doctrine\Common\ClassLoader('Proxies', __DIR__ . '/../cache/doctrine/proxy');
 $classLoader->register();
 
-// Variable $helperSet is defined inside cli-config.php
+// Variable $helperSet is defined inside cli-config.phpß
 require __DIR__ . '/cli-config.php';
 $cli = new \Symfony\Component\Console\Application('Doctrine Command Line Interface', Doctrine\Common\Version::VERSION);
 $cli->setCatchExceptions(true);

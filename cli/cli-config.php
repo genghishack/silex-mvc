@@ -35,34 +35,21 @@ $config->setProxyNamespace('CW\Proxies');
 		
 		/* QA */
 		
-		// 'dbname'   => 'cisports',
+		// 'dbname'   => '',
+		// 'user'     => '',
+		// 'password' => '',
 		
-		// root
-		// 'user'     => 'root',
-		// 'password' => 'S1P4Y',
-		
-		// normal
-		// 'user'     => 'cidev',
-		// 'password' => '59Vl17',
-		
-
 		/* Dev */
 
-		// 'dbname'   => 'campus_insiders',
-		
-		// root
-		// 'user'     => 'root',
-		// 'password' => 'y1Lt2ul6',
-
-		// normal
-		// 'user'     => 'cidev',
-		// 'password' => '9HdXh7Q3S2',
+		// 'dbname'   => '',
+		// 'user'     => '',
+		// 'password' => '',
 
 	// );
 // } else {
 	$connectionOptions = array(
 		'driver'   => 'pdo_mysql',
-		'dbname'   => 'jobSearch',
+		'dbname'   => 'test',
 		'user'     => 'root',
 		'password' => 'root',
 		'host'     => 'localhost'
