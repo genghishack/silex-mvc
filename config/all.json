@@ -2,9 +2,9 @@
 	"debug": false,
 	"use_min": false,
 	
-	"page.title": "Job Search",
+	"page.title": "Silex MVC Framework",
 	"page.meta": {
-		"description": "This is my job search site in development.",
+		"description": "A framework for testing application development.",
 		"author": "Christopher M. Wade",
 		"keywords": ""
 	},
